@@ -20,8 +20,8 @@ cursor = db.cursor()
 # S3
 s3 = boto3.client(
     's3',
-    aws_access_key_id=os.environ['AKIA5JMST4MTJGBRFEGW'],
-    aws_secret_access_key=os.environ['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']
+aws_key = os.getenv('AWS_ACCESS_KEY_ID')
+aws_secret = os.getenv('AWS_SECRET_ACCESS_KEY')
 )
 BUCKET = os.environ['S3_BUCKET']
 
